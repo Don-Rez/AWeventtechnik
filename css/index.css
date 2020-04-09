@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2 rem;
+  background-color: #222222;
+  color: #d8d8d8;
+  min-height: 100vh;
+}
 .home-main-section {
   display: flex;
   align-items: stretch;
@@ -38,9 +47,9 @@
 }
 .home-page-circle-1 {
   position: absolute;
-  width: 40vw;
-  height: 22vw;
-
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
   background-color: rgba(47, 48, 58, 0.233);
   bottom: 5vw;
   left: 5vw;
@@ -50,7 +59,7 @@
   position: absolute;
   width: 17vw;
   height: 17vw;
-
+  border-radius: 50%;
   background-color: rgba(47, 48, 58, 0.233);
   top: 10vh;
   left: 40vw;
