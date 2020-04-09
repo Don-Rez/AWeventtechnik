@@ -12,7 +12,7 @@
   justify-content: flex-start;
 }
 .home-main-section .lamp {
-  background-image: url("/res/13.png");
+  background-image: url("/res/2.png");
   flex-grow: 1;
   max-height: 80vh;
   min-width: 30vw;
@@ -38,9 +38,9 @@
 }
 .home-page-circle-1 {
   position: absolute;
-  width: 25vw;
-  height: 25vw;
-  border-radius: 50%;
+  width: 40vw;
+  height: 22vw;
+
   background-color: rgba(47, 48, 58, 0.233);
   bottom: 5vw;
   left: 5vw;
@@ -48,30 +48,22 @@
 }
 .home-page-circle-2 {
   position: absolute;
-  width: 20vw;
-  height: 20vw;
-  border-radius: 50%;
+  width: 17vw;
+  height: 17vw;
+
   background-color: rgba(47, 48, 58, 0.233);
-  top: 15vh;
-  left: 30vw;
+  top: 10vh;
+  left: 40vw;
   z-index: -1;
 }
 .home-page-circle-3 {
   overflow: hidden;
   position: absolute;
-  width: 45vw;
-  height: 45vw;
-  border-radius: 50%;
+  width: 25vw;
+  height: 100vh;
+
   bottom: 0;
   right: 0;
   z-index: -1;
-}
-.home-page-circle-3 ::before {
-  content: "";
-  transform: translate(40%, 40%);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
   background-color: rgba(47, 48, 58, 0.233);
 }
