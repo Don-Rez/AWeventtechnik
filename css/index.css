@@ -3,7 +3,12 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   font-size: 1.2 rem;
-  background-color: #222222;
+  background-color: #1b1e2b;
+  background-image: url(/res/bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #d8d8d8;
   min-height: 100vh;
 }
@@ -21,7 +26,6 @@ body {
   justify-content: flex-start;
 }
 .home-main-section .lamp {
-  background-image: url("/res/2.png");
   flex-grow: 1;
   max-height: 80vh;
   min-width: 30vw;
@@ -45,34 +49,14 @@ body {
     justify-content: center;
   }
 }
+
 .home-page-circle-1 {
   position: absolute;
   width: 25vw;
   height: 25vw;
   border-radius: 50%;
-  background-color: rgba(47, 48, 58, 0.233);
+  background-color: rgba(41, 45, 62, 0.2);
   bottom: 5vw;
   left: 5vw;
   z-index: -1;
-}
-.home-page-circle-2 {
-  position: absolute;
-  width: 17vw;
-  height: 17vw;
-  border-radius: 50%;
-  background-color: rgba(47, 48, 58, 0.233);
-  top: 10vh;
-  left: 40vw;
-  z-index: -1;
-}
-.home-page-circle-3 {
-  overflow: hidden;
-  position: absolute;
-  width: 25vw;
-  height: 100vh;
-
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  background-color: rgba(47, 48, 58, 0.233);
 }

@@ -1,0 +1,108 @@
+.fotobox-main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.fotobox-main-section iframe {
+  height: 35vh;
+  width: 28vw;
+}
+@media (max-width: 800px) {
+  .fotobox-main-section {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90vw;
+  }
+  .fotobox-main-section .covers-img {
+    margin-top: 2rem;
+    height: 30vh;
+    width: auto;
+  }
+  .fotobox-main-section .title {
+    font-size: 2em;
+  }
+  .fotobox-main-section iframe {
+    height: 35vh;
+    width: 90vw;
+  }
+}
+
+.fotobox-main-section .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.fotobox-main-section .column1 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 15vw;
+
+  align-items: flex-end;
+}
+.fotobox-main-section .column2 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 75%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.about-page-square-1 {
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+  background-color: rgba(41, 45, 62, 0.2);
+  bottom: 5vw;
+  left: 5vw;
+  z-index: -1;
+}
+.about-page-square-2 {
+  position: absolute;
+  width: 17vw;
+  height: 17vw;
+  border-radius: 50%;
+  background-color: rgba(41, 45, 62, 0.2);
+  top: 10vh;
+  left: 40vw;
+  z-index: -1;
+}
+.about-page-square-3 {
+  overflow: hidden;
+  position: absolute;
+  width: 25vw;
+  height: 100vh;
+
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: rgba(41, 45, 62, 0.2);
+}
