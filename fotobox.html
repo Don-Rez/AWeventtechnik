@@ -23,53 +23,94 @@
             <li><a href="about.html">Über uns</a></li>
             <li><a href="leistungen.html">Leistungen</a></li>
             <li><a href="fotobox.html">Fotobox</a></li>
-            <li><a href="gallerie.html">Gallerie</a></li>
-            <li><a href="index.html">Kontakt</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </nav>
       </header>
       <section class="fotobox-main-section">
-        <div class="call-to-action">
-          <h1 class="title">FOTOBOX</h1>
-          <p class="subtitle">
-            Unsere Fotoboxen haben ein einzigartiges Design, sind Unikate &
-            wurden mit viel Liebe zum Detail von uns selbst gebaut.<br />
-            Alle Fotoboxen sind bestückt mit einer <b> Profi Kamera</b>, einem<b>
-              Blitz
-            </b>
-            und einem <b>hochwertigen Drucker</b>, der super schnell & in toller
-            Qualität eure Fotos ausdruckt.<br />
-            Ein <b>Touch Screen</b> sorgt dafür, dass die Fotobox leicht zu
-            bedienen ist.
-
-            <br />
-          </p>
-          <p class="subtitle">
-            - unbegrenzter Fotoausdruck<br />
-            - Gifs & Videos<br />
-            - Requisiten (Hüte, Perücken, Brillen etc.)<br />
-            - Logo / Initialen auf den Fotostreifen<br />
-            - Fotos digital zum Download<br />
-          </p>
-        </div>
-        <div class="covers-img">
-          <iframe src="https://www.youtube.com/embed/7xAVpoFqPHA"> </iframe>
-        </div>
-        <br />
-      </section>
-      <section class="gallery full-height-grow">
         <div class="row">
-          <div class="column">
-            <img src="/w3images/wedding.jpg" style="width: 100%;" />
+          <div class="column2">
+            <div class="call-to-action">
+              <h1 class="title">FOTOBOX</h1>
+              <p class="subtitle">
+                Unsere Fotoboxen haben ein einzigartiges Design, sind Unikate &
+                wurden mit viel Liebe zum Detail von uns selbst gebaut.<br />
+                Alle Fotoboxen sind bestückt mit einer <b> Profi Kamera</b>,
+                einem<b>
+                  Blitz
+                </b>
+                und einem <b>hochwertigen Drucker</b>, der super schnell & in
+                toller Qualität eure Fotos ausdruckt.<br />
+                Ein <b>Touch Screen</b> sorgt dafür, dass die Fotobox leicht zu
+                bedienen ist.
+
+                <br />
+              </p>
+              <div class="row">
+                <div class="column">
+                  <p class="subtitle">
+                    - unbegrenzter Fotoausdruck<br />
+                    - Gifs & Videos<br />
+                    - Requisiten (Hüte, Perücken, Brillen etc.)<br />
+                    - Logo / Initialen auf den Fotostreifen<br />
+                    - Fotos digital zum Download<br />
+                  </p>
+                </div>
+                <div class="column">
+                  <iframe src="https://www.youtube.com/embed/7xAVpoFqPHA">
+                  </iframe>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="column">
-            <img src="/w3images/underwater.jpg" style="width: 100%;" />
-          </div>
-          <div class="column">
-            <img src="/w3images/wedding.jpg" style="width: 100%;" />
-          </div>
-          <div class="column">
-            <img src="/w3images/underwater.jpg" style="width: 100%;" />
+          <div class="column1">
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="/res/1fotobox.jpeg" style="width: 100%;" />
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="/res/3fotobox.jpeg" style="width: 100%;" />
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="/res/5fotobox.jpeg" style="width: 100%;" />
+              </div>
+            </div>
+            <br />
+
+            <div style="text-align: center;">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+
+            <script>
+              var slideIndex = 0;
+              showSlides();
+
+              function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                  slideIndex = 1;
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+              }
+            </script>
           </div>
         </div>
       </section>
