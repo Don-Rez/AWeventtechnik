@@ -11,6 +11,7 @@ body {
   background-repeat: no-repeat;
   color: #d8d8d8;
   min-height: 100vh;
+  overflow: hidden;
 }
 .home-main-section {
   display: flex;
@@ -45,8 +46,21 @@ body {
   .home-main-section .img-wrapper {
     display: none;
   }
-  .home-main-section {
-    justify-content: center;
+  .call-to-action {
+    background-color: rgba(27, 30, 44, 0.658);
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .subtitle {
+    font-weight: 500;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 }
 
