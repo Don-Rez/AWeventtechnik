@@ -237,17 +237,24 @@ body {
   .home-main-section .img-wrapper {
     display: none;
   }
-  .call-to-action {
+  .home-main-section  .call-to-action {
+    margin-top: 250px;
+    margin-left: 25px;
+    margin-right:25px;
+
+    justify-content: center;
+    max-width: 90vw;
+    display: flex;
     background-color: rgba(27, 30, 44, 0.658);
   }
 
-  .title {
+  .home-main-section .title {
     font-weight: 600;
     font-size: 2.5em;
     margin-top: 0;
     margin-bottom: 1rem;
   }
-  .subtitle {
+  .home-main-section .subtitle {
     font-weight: 500;
     font-size: 1em;
     margin-top: 0;

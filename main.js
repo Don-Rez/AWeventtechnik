@@ -7,11 +7,11 @@ function delay(n) {
   });
 }
 
-function pageTransition() {
+function pageTransitionLeave() {
   var tl = gsap.timeline();
   tl.to(".load-container div", {
     duration: 1.5,
-    width: "100%",
+    width: "110%",
     left: "0%",
     ease: "Expo.easeInOut",
     stagger: 0.2,
@@ -27,23 +27,18 @@ function pageTransition() {
   });
   tl.set(".load-container div", { left: "-100%" });
 }
-
-function contentAnimation() {
-  var tl = gsap.timeline();
-  tl.from(".animate-this", {
-    duration: 1.5,
-    translateY: 50,
-    opacity: 0,
+function pageTransitionEnter() {
+  tl.to(".load-container div", {
+    duration: 0.5,
+    width: "0%",
+    left: "100%",
+    ease: "Expo.easeInOut",
+    delay: 0.3,
+    stagger: 0.1,
   });
-
-  tl.to(
-    ".covers-img",
-    {
-      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
-    },
-    "-=1"
-  );
+  tl.set(".load-container div", { left: "-100%" });
 }
+
 var slideIndex = 0;
 function showSlides() {
   var i;
@@ -88,25 +83,21 @@ function navSlide() {
 
 $(function () {
   barba.init({
-    sync: true,
-
     transitions: [
       {
         async leave(data) {
           const done = this.async();
 
-          pageTransition();
+          pageTransitionLeave();
           await delay(1000);
           done();
         },
 
         async enter(data) {
-          contentAnimation();
+          window.location.reload();
         },
 
-        async once(data) {
-          contentAnimation();
-        },
+        async once(data) {},
       },
     ],
   });
