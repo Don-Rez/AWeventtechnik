@@ -11,7 +11,10 @@ body {
   background-color: #1b1e2b;
   color: #d8d8d8;
   min-height: 100vh;
- 
+
+}
+.intro {
+  top: 60%
 }
 
 .full-height-grow {
@@ -190,3 +193,4 @@ body {
 .toggle .line3 {
   transform: rotate(45deg) translate(-9px, -15px);
 }
+ 

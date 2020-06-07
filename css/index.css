@@ -15,9 +15,14 @@ body {
 }
 .home-main-section {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: space-between;
   flex-grow: 1;
+  background-image: url(/res/bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .home-main-section .img-wrapper {
   flex-grow: 1;
@@ -40,7 +45,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin: 1rem;
-  align-self: center;
+  justify-content: space-between;
 }
 @media (max-width: 900px) {
   .home-main-section .img-wrapper {

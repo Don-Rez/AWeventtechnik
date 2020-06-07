@@ -7,20 +7,26 @@
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/s1.css" />
-    <link rel="stylesheet" href="css/ftb.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
     <title>AW Eventtechnik-Leistungen</title>
   </head>
-  <body class="full-height-grow">
-    <div class="container full-height-grow">
+  <body class="full-height-grow" data-barba="wrapper">
+    <div class="load-container">
+      <div class="loading-screen"></div>
+    </div>
+    <div
+      class="container full-height-grow"
+      data-barba="container"
+      data-barba-namespace="foto-section"
+    >
       <header class="main-header">
         <a href="/" class="brand-logo">
           <img src="res/logol.png" alt="AW" style="height: 140px;" />
         </a>
         <nav class="main-nav">
           <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Über uns</a></li>
+            <li><a href="about.html">Home</a></li>
             <li><a href="leistungen.html">Leistungen</a></li>
             <li><a href="fotobox.html">Fotobox</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
@@ -32,7 +38,7 @@
           <div class="line3"></div>
         </div>
       </header>
-      <section class="about-main-section">
+      <main class="fotobox-main-section">
         <div class="call-to-action">
           <h1 class="title">FOTOBOX</h1>
 
@@ -78,35 +84,11 @@
           <span class="dot"></span>
           <span class="dot"></span>
         </div>
-
-        <script>
-          var slideIndex = 0;
-          showSlides();
-
-          function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-              slideIndex = 1;
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 5000); // Change image every 2 seconds
-          }
-        </script>
-      </section>
+      </main>
     </div>
-    <div class="about-page-square-1"></div>
-    <div class="about-page-square-2"></div>
-    <div class="about-page-square-3"></div>
+    <div class="fotobox-page-square-1"></div>
+    <div class="fotobox-page-square-2"></div>
+    <div class="fotobox-page-square-3"></div>
     <footer class="main-footer">
       <div class="container">
         <nav class="footer-nav">
@@ -127,6 +109,14 @@
         </nav>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"
+    ></script>
+
+    <script src="main.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

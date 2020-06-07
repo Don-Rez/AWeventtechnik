@@ -7,45 +7,28 @@
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/s1.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <title>AW Eventtechnik</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>AW Eventtechnik-Über uns</title>
   </head>
-  <body class="container full-height-grow">
-    <header class="main-header">
-      <a href="/" class="brand-logo">
-        <img src="res/logol.png" alt="AW" style="height: 140px;" />
-      </a>
-      <nav class="main-nav">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">Über uns</a></li>
-          <li><a href="leistungen.html">Leistungen</a></li>
-          <li><a href="fotobox.html">Fotobox</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </header>
-    <section class="home-main-section">
-      <div class="call-to-action">
+  <body class="full-height-grow" data-barba="wrapper">
+    <div class="load-container">
+      <div class="loading-screen"></div>
+    </div>
+    <main
+      class="home-main-section"
+      data-barba="container"
+      data-barba-namespace="intro-section"
+    >
+      <div class="call-to-action intro animate-this">
         <h1 class="title">AW Eventechnik</h1>
         <span class="subtitle">
           Tontechnik, Lichttechnik, Fotoboxen, Videotechnik</span
         >
         <a href="about.html" class="btn">Mehr erfahren</a>
       </div>
-      <div class="img-wrapper">
-        <div class="lamp"></div>
-      </div>
-    </section>
-    <div class="home-page-circle-1"></div>
-    <div class="home-page-circle-2"></div>
-    <div class="home-page-circle-3"></div>
-    <script src="app.js"></script>
+    </main>
+
+    <script src="main.js"></script>
   </body>
 </html>
