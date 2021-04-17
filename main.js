@@ -94,7 +94,7 @@ $(function () {
         },
 
         async enter(data) {
-          window.location.reload();
+          console.log("transition command test");
         },
 
         async once(data) {},
